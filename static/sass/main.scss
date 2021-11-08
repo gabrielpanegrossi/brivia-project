@@ -1,0 +1,377 @@
+// Utilities
+@import 'utilities/global';
+
+//
+// Main general
+//
+main {
+	.dream-about-it {
+		position: relative;
+
+		.image-handler {
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		.pills-content-handler {
+			background: $lighter-gray;
+
+			.content-nav {
+				ul .nav-link {
+					border-radius: unset;
+				}
+			}
+
+			.content-handler {
+				article {
+					flex-direction: column;
+					justify-content: space-between;
+					height: 100%;
+					width: 80%;
+					margin: 0 auto;
+					padding: 0 0 60px;
+
+					h2 {
+						margin-bottom: 20px;
+					}
+
+					p {
+						margin-bottom: 35px;
+					}
+
+					button {
+						display: flex;
+						align-items: center;
+						margin-left: auto;
+
+						span:first-child {
+							margin-right: 10px;
+						}
+					}
+				}
+			}
+
+			.show.active {
+				display: flex;
+			}
+		}
+	}
+
+	.explaining-the-product {
+		padding: 0;
+
+		.positive-points {
+			background: $orange;
+
+			h2 {
+				max-width: 210px;
+				margin-bottom: 30px;
+				color: $gray;
+				font-weight: bold;
+			}
+
+			.row {
+				& > div {
+					padding-left: 0;
+					padding-right: 24px;
+					margin-bottom: 35px;
+				}
+
+				p {
+					font-size: 12px;
+					margin: 0;
+					color: $subtext-gray;
+				}
+
+				p:first-child {
+					font-size: 16px;
+					margin-bottom: 5px;
+					color: $black;
+				}
+
+				span {
+					min-width: 40px;
+					min-height: 40px;
+					margin: 5px 10px 0 0;
+				}
+			}
+
+			.nav-link {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-top: 80px;
+				width: 50%;
+				min-width: fit-content;
+				color: $white;
+				background: $gray;
+				border: none;
+
+				span:first-child {
+					margin-right: 10px;
+				}
+
+				&:focus,
+				&:hover {
+					box-shadow: none;
+					background: $gray;
+					border: none;
+				}
+			}
+		}
+
+		.plans-illustrator {
+			background: $strong-gray;
+
+			h2 {
+				margin-bottom: 40px;
+				color: $white;
+				font-weight: bold;
+			}
+
+			.nav-pills {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				position: relative;
+
+				width: 100%;
+
+				.nav-item {
+					min-width: fit-content;
+					width: 40%;
+					margin: 0 10px 0 0;
+
+					.nav-link {
+						width: 100%;
+						border-radius: unset;
+						border: 1px solid $orange;
+
+						&:focus,
+						&:hover {
+							box-shadow: none;
+							background: $orange;
+							border: 1px solid $orange;
+						}
+					}
+
+					.nav-link:not(.active) {
+						background: transparent;
+						color: white;
+
+						&:focus,
+						&:hover {
+							box-shadow: none;
+							background: transparent;
+							border: 1px solid $orange;
+						}
+					}
+
+					.nav-link.active {
+						position: relative;
+						&::after {
+							content: '';
+							background: url('../assets/img/polygon.png');
+							background-size: contain;
+							background-repeat: no-repeat;
+							position: absolute;
+							top: 100%;
+							left: 50%;
+							transform: translateX(-50%);
+							width: 20px;
+							height: 10px;
+						}
+					}
+				}
+			}
+
+			.tab-content {
+				margin-top: 30px;
+
+				.tab-pane.active {
+					display: flex;
+					justify-content: center;
+				}
+			}
+		}
+	}
+}
+
+//
+// Desktop
+//
+@media (min-width: 768px) {
+	main {
+		.dream-about-it {
+			padding: 90px;
+
+			.image-handler {
+				padding-right: 0;
+			}
+
+			.content-nav {
+				display: flex;
+				justify-content: center;
+				padding: 60px 0 0;
+				margin-bottom: 30px;
+
+				ul {
+					display: flex;
+					align-items: center;
+					gap: 15px;
+					width: 100%;
+					max-width: 80%;
+					margin: 0 auto;
+
+					li {
+						min-width: 87px;
+						width: 22%;
+					}
+
+					.nav-link {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						gap: 5px;
+						font-weight: bold;
+						font-size: 12px;
+						padding: 10px;
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		.explaining-the-product {
+			.positive-points,
+			.plans-illustrator {
+				padding: 60px 90px;
+			}
+
+			.positive-points {
+				h2 {
+					max-width: 210px;
+					margin-bottom: 30px;
+					color: $gray;
+					font-weight: bold;
+
+					&::after {
+						content: 'Lorem ipsum dolor sit amet.';
+					}
+				}
+
+				.row {
+					& > div {
+						padding-left: 0;
+						padding-right: 24px;
+						margin-bottom: 35px;
+					}
+				}
+			}
+
+			.plans-illustrator {
+			}
+		}
+	}
+}
+
+//
+// Mobile
+//
+@media (max-width: 767px) {
+	main {
+		.dream-about-it {
+			padding: 90px 0 0;
+
+			.image-handler {
+				padding: 0;
+			}
+
+			.pills-content-handler {
+				.content-nav ul {
+					position: absolute;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 100%;
+					max-width: 90%;
+					gap: 10px;
+					top: 25px;
+					left: 50%;
+					transform: translateX(-50%);
+
+					.nav-link {
+						display: flex;
+						align-items: center;
+						gap: 5px;
+						padding: 10px;
+						font-weight: normal;
+						font-size: 12px;
+					}
+				}
+
+				.content-handler {
+					article {
+						padding: 60px 0 60px;
+					}
+
+					button {
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+
+		.explaining-the-product {
+			.row {
+				flex-direction: column-reverse;
+			}
+			.positive-points,
+			.plans-illustrator {
+				padding-top: 35px;
+			}
+
+			.positive-points {
+				padding-bottom: 50px;
+
+				h2 {
+					&::after {
+						content: 'Diferenciais do apartamento';
+					}
+				}
+
+				button {
+					margin: 0 auto;
+				}
+			}
+
+			.plans-illustrator {
+				padding-bottom: 100px;
+			}
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	main {
+		.dream-about-it {
+			.pills-content-handler {
+				.content-nav ul {
+					top: 30px;
+
+					.nav-link {
+						font-size: 8px;
+
+						span:first-child {
+							min-height: 10px;
+							min-width: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

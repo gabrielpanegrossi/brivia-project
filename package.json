@@ -1,0 +1,24 @@
+{
+	"name": "brivia-project",
+	"version": "1.0.0",
+	"description": "This project is being created to a job interview at Brivia",
+	"main": "main.js",
+	"directories": {
+		"lib": "lib"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Gabriel P. Santos",
+	"license": "ISC",
+	"devDependencies": {
+		"gulp-clean-css": "^4.3.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-sass": "^5.0.0",
+		"gulp-sourcemaps": "^3.0.0",
+		"node-sass": "^6.0.1"
+	},
+	"dependencies": {
+		"gulp": "^4.0.2"
+	}
+}

@@ -1,0 +1,62 @@
+@import url(../css/bootstrap.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,900&display=swap');
+
+$white: #fff;
+$lighter-gray: #ecf2f2;
+$light-gray: #efebe5;
+$gray: #5e5e5e;
+$strong-gray: #454545;
+$subtext-gray: #393937;
+$stronger-gray: #252525;
+$black: #000;
+$light-brown: #7f736e;
+$brown: #5e5e5e;
+$strong-brown: #393937;
+$blue: #9abdc3;
+$orange: #ed6f2e;
+$strong-orange: #eb4826;
+
+* {
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+.row,
+.navbar,
+#navbarSupportedContent {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link,
+.nav-link.primary {
+	background: $orange;
+	color: $white;
+
+	&:hover,
+	&:focus {
+		border: none;
+		outline: $orange;
+		box-shadow: none;
+	}
+}
+
+.nav-link.secondary {
+	background: $strong-orange;
+	color: $white;
+	border: none;
+
+	&:hover,
+	&:focus {
+		border: none;
+		outline: $strong-orange;
+		box-shadow: none;
+	}
+}
