@@ -1,0 +1,1 @@
+const arr=$(".plans-illustrator .nav-pills .nav-item");let x=arr.length-1;function changeOption(n){arr.map((a,l)=>{l.style.display=a===n?"none":"initial"}),x!=arr.length-1?x++:x=0}$(document).ready(function(){changeOption(x)}),$(".plans-illustrator .nav-pills span").click(()=>{changeOption(x)});

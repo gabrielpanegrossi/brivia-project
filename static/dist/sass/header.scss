@@ -88,8 +88,25 @@ header {
 		}
 	}
 
-	.home-banner .text-handler {
-		color: $white;
+	.home-banner {
+		position: relative;
+
+		.icon-handler {
+			width: fit-content;
+			max-width: unset;
+			padding: 0;
+
+			.downArrow-icon {
+				position: absolute;
+				bottom: 10px;
+				left: 50%;
+				padding: 10px;
+			}
+		}
+
+		.text-handler {
+			color: $white;
+		}
 	}
 
 	#navbarSupportedContent {
@@ -111,7 +128,7 @@ header {
 	header {
 		.banner {
 			padding: 0;
-			background: url(../assets/img/bedroom.png);
+			background: url('../../assets/img/bedroom.png');
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center;
@@ -138,7 +155,7 @@ header {
 		}
 
 		.home-banner {
-			min-height: 60vh;
+			min-height: 600px;
 
 			.bannerModal-button {
 				display: none;
@@ -238,7 +255,7 @@ header {
 	header {
 		.banner {
 			padding: 0;
-			background: url(../assets/img/mobile-bedroom.png);
+			background: url('../../assets/img/mobile-bedroom.png');
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center;
