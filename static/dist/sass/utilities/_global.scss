@@ -7,12 +7,12 @@ $white: #fff;
 $lighter-gray: #ecf2f2;
 $light-gray: #efebe5;
 $gray: #5e5e5e;
-$x-gray:#616161;
+$x-gray: #616161;
 $strong-gray: #454545;
 $subtext-gray: #393937;
 $stronger-gray: #252525;
 $stronger-xx-gray: #363636;
-$stronger-xxx-gray:#171717;
+$stronger-xxx-gray: #171717;
 $black: #000;
 $light-brown: #7f736e;
 $brown: #5e5e5e;
@@ -23,16 +23,16 @@ $strong-orange: #eb4826;
 
 //
 //Font-size
-$font-s:8px;
-$font-xs:12px;
-$font-xxs:14px;
-$font-m:16px;
-$font-xm:24px;
-$font-l:30px;
+$font-s: 8px;
+$font-xs: 12px;
+$font-xxs: 14px;
+$font-m: 16px;
+$font-xm: 24px;
+$font-l: 30px;
 
 //
 //Indent
-$indent-base:20px;
+$indent-base: 20px;
 $indent-s: calc(#{$indent-base} / 4); //5px
 $indent-xs: calc(#{$indent-base} / 2); //10px
 $indent-xxs: calc(#{$indent-base} * 0.75); //15px
@@ -46,7 +46,6 @@ $indent-xxxxxxm: calc(#{$indent-base} * 3.5); //70px
 $indent-l: calc(#{$indent-base} * 4); //80px
 $indent-xl: calc(#{$indent-base} * 4.5); //90px
 $indent-xxl: calc(#{$indent-base} * 5); //100px
-
 
 * {
 	font-family: 'Lato', sans-serif;
@@ -94,16 +93,16 @@ img {
 	}
 }
 
-a{
+a {
 	align-items: center;
-	justify-content:center;
+	justify-content: center;
 	font-size: 14px;
 
-	span{
+	span {
 		margin-right: 5px;
 	}
 }
 
 .sortable-handler {
 	touch-action: none;
-  }
+}

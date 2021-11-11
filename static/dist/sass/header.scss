@@ -5,10 +5,9 @@
 // Header general
 //
 header {
+	.banner {
+		position: relative;
 
-	.banner{
-		position:relative;
-		
 		.icon-handler {
 			position: absolute;
 			height: fit-content;
@@ -17,12 +16,11 @@ header {
 			left: 50%;
 			transform: translateX(-50%);
 
-	
 			.downArrow-icon {
-				display:block;
-				width:100%;
-				height:25px;
-				position:relative;
+				display: block;
+				width: 100%;
+				height: 25px;
+				position: relative;
 				padding: $indent-xs;
 			}
 		}
@@ -239,12 +237,12 @@ header {
 
 						.modal-footer {
 							padding: 0 $indent-xxs $indent-xxs;
-							flex-wrap:unset;
+							flex-wrap: unset;
 							.btn-primary {
 								color: $strong-gray;
 								background: $light-gray;
 								border: none;
-								border-radius:unset;
+								border-radius: unset;
 
 								&:focus,
 								&:hover {

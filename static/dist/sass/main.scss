@@ -132,26 +132,26 @@ main {
 				font-weight: bold;
 			}
 
-			.plans-nav-container{
+			.plans-nav-container {
 				.nav-pills {
 					display: flex;
 					justify-content: space-between;
 					align-items: center;
 					position: relative;
-					margin-bottom:0;
+					margin-bottom: 0;
 					width: 100%;
-					gap:10px;
-	
+					gap: 10px;
+
 					.nav-item {
 						min-width: fit-content;
 						width: 100%;
-						max-width:45%;
-	
+						max-width: 45%;
+
 						.nav-link {
 							width: 100%;
 							border-radius: unset;
 							border: 1px solid $orange;
-	
+
 							&:focus,
 							&:hover {
 								box-shadow: none;
@@ -159,11 +159,11 @@ main {
 								border: 1px solid $orange;
 							}
 						}
-	
+
 						.nav-link:not(.active) {
 							background: transparent;
 							color: white;
-	
+
 							&:focus,
 							&:hover {
 								box-shadow: none;
@@ -171,7 +171,7 @@ main {
 								border: 1px solid $orange;
 							}
 						}
-	
+
 						.nav-link.active {
 							position: relative;
 							&::after {
@@ -190,18 +190,18 @@ main {
 					}
 				}
 
-				.icon-handler{
-					display:flex;
-					align-items:center;
-					justify-content:center;
-					width:10%;
-					
-					span{
-						cursor:pointer;
+				.icon-handler {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 10%;
+
+					span {
+						cursor: pointer;
 					}
 				}
 			}
-		
+
 			.tab-content {
 				margin-top: $indent-xm;
 
@@ -216,33 +216,33 @@ main {
 	.schedule-visit {
 		padding: 0;
 
-		.row{
+		.row {
 			background: $strong-gray;
-			color:$white;
+			color: $white;
 
 			h2,
 			p,
-			.schedule-wrapper{
-				padding:0;
+			.schedule-wrapper {
+				padding: 0;
 			}
 
-			h2{
-				font-weight:bold;
+			h2 {
+				font-weight: bold;
 			}
 
-			.buttons-handler{
-				display:flex;
-				gap:10px;
+			.buttons-handler {
+				display: flex;
+				gap: 10px;
 
-				a{
-					display:flex;
+				a {
+					display: flex;
 				}
 			}
 		}
 	}
 
-	.maps .row iframe{
-		padding:0;
+	.maps .row iframe {
+		padding: 0;
 	}
 }
 
@@ -250,13 +250,13 @@ main {
 // Desktop
 //
 
-@media(max-width:1023px){
-	.explaining-the-product > .row{
-		flex-direction:column-reverse;
+@media (max-width: 1023px) {
+	.explaining-the-product > .row {
+		flex-direction: column-reverse;
 
 		.positive-points,
-		.plans-illustrator{
-			width:100%;
+		.plans-illustrator {
+			width: 100%;
 		}
 	}
 }
@@ -331,26 +331,26 @@ main {
 			}
 		}
 
-		.schedule-visit .row{
-			padding:$indent-xxxxxxm $indent-xl;
-	
-			h2{
-				color:$orange;
+		.schedule-visit .row {
+			padding: $indent-xxxxxxm $indent-xl;
+
+			h2 {
+				color: $orange;
 			}
-	
-			p{
+
+			p {
 				font-size: $font-m;
 				max-width: 790px;
 			}
-	
-			.schedule-wrapper{
-				display:flex;
-				justify-content:space-between;
-	
-				div:first-child{
-					span{
+
+			.schedule-wrapper {
+				display: flex;
+				justify-content: space-between;
+
+				div:first-child {
+					span {
 						font-size: $font-xm;
-						margin-right:$indent-xs;
+						margin-right: $indent-xs;
 					}
 				}
 			}
@@ -404,14 +404,13 @@ main {
 		}
 
 		.explaining-the-product {
-
 			.row {
 				flex-direction: column-reverse;
 			}
-			
+
 			.positive-points,
 			.plans-illustrator {
-				padding:0 $indent-xxxxm;
+				padding: 0 $indent-xxxxm;
 				padding-top: $indent-xxm;
 			}
 
@@ -434,30 +433,30 @@ main {
 			}
 		}
 
-		.schedule-visit .row{
-			padding:$indent-xxxxm $indent-xxxxm;
-	
-			h2{
-				color:$orange;
-				font-size:$font-l;
+		.schedule-visit .row {
+			padding: $indent-xxxxm $indent-xxxxm;
+
+			h2 {
+				color: $orange;
+				font-size: $font-l;
 			}
-	
-			p{
+
+			p {
 				font-size: $font-xxs;
 			}
-	
-			.schedule-wrapper{
-				display:flex;
-				flex-direction:column;
-	
-				div:first-child{
-					span{
+
+			.schedule-wrapper {
+				display: flex;
+				flex-direction: column;
+
+				div:first-child {
+					span {
 						font-size: $font-xm;
 					}
 				}
-	
-				.buttons-handler{
-					margin-top:$indent-xm;
+
+				.buttons-handler {
+					margin-top: $indent-xm;
 				}
 			}
 		}

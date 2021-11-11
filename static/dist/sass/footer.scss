@@ -4,70 +4,68 @@
 //
 // Footer general
 //
-footer{
-    .footer-content{
-        padding:0;
-        
-        .row{
-            background:$stronger-xxx-gray;
+footer {
+	.footer-content {
+		padding: 0;
 
-            div:first-child{
-                border-bottom:1px solid $stronger-xx-gray;
-            }
+		.row {
+			background: $stronger-xxx-gray;
 
-            .copy-right{
-                color: $x-gray;
-                font-size:12px;
-            }
-        }
-    }
+			div:first-child {
+				border-bottom: 1px solid $stronger-xx-gray;
+			}
+
+			.copy-right {
+				color: $x-gray;
+				font-size: 12px;
+			}
+		}
+	}
 }
 
 //
 // Desktop
 //
 @media (min-width: 768px) {
-    footer {
-        .footer-content{
+	footer {
+		.footer-content {
+			.row {
+				padding: $indent-xxxm $indent-xl $indent-xl;
 
-            .row{
-                padding: $indent-xxxm $indent-xl $indent-xl;
+				div:first-child {
+					padding-bottom: $indent-base;
+					margin-bottom: $indent-xxxxxxm;
+				}
 
-                div:first-child{
-                    padding-bottom: $indent-base;
-                    margin-bottom:$indent-xxxxxxm;
-                }
-
-                .copy-right{
-                    display: flex;
-                    gap: $indent-xxl;
-                }
-            }
-        }
-    }
+				.copy-right {
+					display: flex;
+					gap: $indent-xxl;
+				}
+			}
+		}
+	}
 }
 
 //
 // Mobile
 //
 @media (max-width: 767px) {
-    footer {
-        .footer-content{
+	footer {
+		.footer-content {
+			.row {
+				padding: $indent-xxxm $indent-xxxxxm $indent-xl;
 
-            .row{
-                padding: $indent-xxxm $indent-xxxxxm $indent-xl;
+				div:first-child {
+					padding-bottom: $indent-xl;
+					margin-bottom: $indent-l;
+				}
 
-                div:first-child{
-                    padding-bottom: $indent-xl;
-                    margin-bottom:$indent-l;
-                }
-
-                .copy-right{
-                    display: flex;
-                    flex-direction:column;
-                    gap: $indent-s;
-                }
-            }
-        }
-    }
+				.copy-right {
+					display: flex;
+					flex-direction: column;
+					gap: $indent-s;
+				}
+			}
+		}
+	}
 }
