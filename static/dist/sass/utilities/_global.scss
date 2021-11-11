@@ -5,9 +5,12 @@ $white: #fff;
 $lighter-gray: #ecf2f2;
 $light-gray: #efebe5;
 $gray: #5e5e5e;
+$x-gray:#616161;
 $strong-gray: #454545;
 $subtext-gray: #393937;
 $stronger-gray: #252525;
+$stronger-xx-gray: #363636;
+$stronger-xxx-gray:#171717;
 $black: #000;
 $light-brown: #7f736e;
 $brown: #5e5e5e;
@@ -39,10 +42,11 @@ img {
 .nav-link.primary {
 	background: $orange;
 	color: $white;
+	border: 1px solid $orange;
 
 	&:hover,
 	&:focus {
-		border: none;
+		border: 1px solid $orange;
 		outline: $orange;
 		box-shadow: none;
 	}
@@ -51,12 +55,22 @@ img {
 .nav-link.secondary {
 	background: $strong-orange;
 	color: $white;
-	border: none;
+	border: 1px solid $strong-orange;
 
 	&:hover,
 	&:focus {
-		border: none;
+		border: 1px solid $strong-orange;
 		outline: $strong-orange;
 		box-shadow: none;
+	}
+}
+
+a{
+	align-items: center;
+	justify-content:center;
+	font-size: 14px;
+
+	span{
+		margin-right: 5px;
 	}
 }

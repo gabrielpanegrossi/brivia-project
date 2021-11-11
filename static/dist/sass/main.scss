@@ -42,7 +42,7 @@ main {
 						margin-bottom: 35px;
 					}
 
-					button {
+					a {
 						display: flex;
 						align-items: center;
 						margin-left: auto;
@@ -132,62 +132,76 @@ main {
 				font-weight: bold;
 			}
 
-			.nav-pills {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				position: relative;
-
-				width: 100%;
-
-				.nav-item {
-					min-width: fit-content;
-					width: 40%;
-					margin: 0 10px 0 0;
-
-					.nav-link {
+			.plans-nav-container{
+				.nav-pills {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					position: relative;
+					margin-bottom:0;
+					width: 100%;
+					gap:10px;
+	
+					.nav-item {
+						min-width: fit-content;
 						width: 100%;
-						border-radius: unset;
-						border: 1px solid $orange;
-
-						&:focus,
-						&:hover {
-							box-shadow: none;
-							background: $orange;
+						max-width:45%;
+	
+						.nav-link {
+							width: 100%;
+							border-radius: unset;
 							border: 1px solid $orange;
+	
+							&:focus,
+							&:hover {
+								box-shadow: none;
+								background: $orange;
+								border: 1px solid $orange;
+							}
 						}
-					}
-
-					.nav-link:not(.active) {
-						background: transparent;
-						color: white;
-
-						&:focus,
-						&:hover {
-							box-shadow: none;
+	
+						.nav-link:not(.active) {
 							background: transparent;
-							border: 1px solid $orange;
+							color: white;
+	
+							&:focus,
+							&:hover {
+								box-shadow: none;
+								background: transparent;
+								border: 1px solid $orange;
+							}
 						}
-					}
-
-					.nav-link.active {
-						position: relative;
-						&::after {
-							content: '';
-							background: url('../../assets/img/polygon.png');
-							background-size: contain;
-							background-repeat: no-repeat;
-							position: absolute;
-							top: 100%;
-							left: 50%;
-							transform: translateX(-50%);
-							width: 20px;
-							height: 10px;
+	
+						.nav-link.active {
+							position: relative;
+							&::after {
+								content: '';
+								background: url('../../assets/img/polygon.png');
+								background-size: contain;
+								background-repeat: no-repeat;
+								position: absolute;
+								top: 100%;
+								left: 50%;
+								transform: translateX(-50%);
+								width: 20px;
+								height: 10px;
+							}
 						}
 					}
 				}
-			}
 
+				.icon-handler{
+					display:flex;
+					align-items:center;
+					justify-content:center;
+					width:10%;
+					
+					span{
+						cursor:pointer;
+					}
+				}
+			}
+		
 			.tab-content {
 				margin-top: 30px;
 
@@ -197,6 +211,38 @@ main {
 				}
 			}
 		}
+	}
+
+	.schedule-visit {
+		padding: 0;
+
+		.row{
+			background: $strong-gray;
+			color:$white;
+
+			h2,
+			p,
+			.schedule-wrapper{
+				padding:0;
+			}
+
+			h2{
+				font-weight:bold;
+			}
+
+			.buttons-handler{
+				display:flex;
+				gap:10px;
+
+				a{
+					display:flex;
+				}
+			}
+		}
+	}
+
+	.maps .row iframe{
+		padding:0;
 	}
 }
 
@@ -271,8 +317,30 @@ main {
 					}
 				}
 			}
+		}
 
-			.plans-illustrator {
+		.schedule-visit .row{
+			padding:70px 90px;
+	
+			h2{
+				color:$orange;
+			}
+	
+			p{
+				font-size: 16px;
+				max-width: 790px;
+			}
+	
+			.schedule-wrapper{
+				display:flex;
+				justify-content:space-between;
+	
+				div:first-child{
+					span{
+						font-size: 24px;
+						margin-right:10px;
+					}
+				}
 			}
 		}
 	}
@@ -304,8 +372,6 @@ main {
 					transform: translateX(-50%);
 
 					.nav-link {
-						display: flex;
-						align-items: center;
 						gap: 5px;
 						padding: 10px;
 						font-weight: normal;
@@ -326,11 +392,14 @@ main {
 		}
 
 		.explaining-the-product {
+
 			.row {
 				flex-direction: column-reverse;
 			}
+			
 			.positive-points,
 			.plans-illustrator {
+				padding:0 60px;
 				padding-top: 35px;
 			}
 
@@ -350,6 +419,34 @@ main {
 
 			.plans-illustrator {
 				padding-bottom: 100px;
+			}
+		}
+
+		.schedule-visit .row{
+			padding:50px 60px;
+	
+			h2{
+				color:$orange;
+				font-size:30px;
+			}
+	
+			p{
+				font-size: 14px;
+			}
+	
+			.schedule-wrapper{
+				display:flex;
+				flex-direction:column;
+	
+				div:first-child{
+					span{
+						font-size: 24px;
+					}
+				}
+	
+				.buttons-handler{
+					margin-top:30px;
+				}
 			}
 		}
 	}

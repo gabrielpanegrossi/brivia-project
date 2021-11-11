@@ -5,6 +5,29 @@
 // Header general
 //
 header {
+
+	.banner{
+		position:relative;
+		
+		.icon-handler {
+			position: absolute;
+			height: fit-content;
+			padding: 0;
+			bottom: 10px;
+			left: 50%;
+			transform: translateX(-50%);
+
+	
+			.downArrow-icon {
+				display:block;
+				width:100%;
+				height:25px;
+				position:relative;
+				padding: 10px;
+			}
+		}
+	}
+
 	.nav-row {
 		width: 100%;
 	}
@@ -90,19 +113,6 @@ header {
 
 	.home-banner {
 		position: relative;
-
-		.icon-handler {
-			width: fit-content;
-			max-width: unset;
-			padding: 0;
-
-			.downArrow-icon {
-				position: absolute;
-				bottom: 10px;
-				left: 50%;
-				padding: 10px;
-			}
-		}
 
 		.text-handler {
 			color: $white;
@@ -232,6 +242,7 @@ header {
 								color: $strong-gray;
 								background: $light-gray;
 								border: none;
+								border-radius:unset;
 
 								&:focus,
 								&:hover {

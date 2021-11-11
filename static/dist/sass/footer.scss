@@ -1,0 +1,73 @@
+// Utilities
+@import 'utilities/global';
+
+//
+// Footer general
+//
+footer{
+    .footer-content{
+        padding:0;
+        
+        .row{
+            background:$stronger-xxx-gray;
+
+            div:first-child{
+                border-bottom:1px solid $stronger-xx-gray;
+            }
+
+            .copy-right{
+                color: $x-gray;
+                font-size:12px;
+            }
+        }
+    }
+}
+
+//
+// Desktop
+//
+@media (min-width: 768px) {
+    footer {
+        .footer-content{
+
+            .row{
+                padding: 40px 90px 90px;
+
+                div:first-child{
+                    padding-bottom: 20px;
+                    margin-bottom:70px;
+                }
+
+                .copy-right{
+                    display: flex;
+                    gap: 100px;
+                }
+            }
+        }
+    }
+}
+
+//
+// Mobile
+//
+@media (max-width: 767px) {
+    footer {
+        .footer-content{
+
+            .row{
+                padding: 40px 60px 90px;
+
+                div:first-child{
+                    padding-bottom: 90px;
+                    margin-bottom:80px;
+                }
+
+                .copy-right{
+                    display: flex;
+                    flex-direction:column;
+                    gap: 5px;
+                }
+            }
+        }
+    }
+}

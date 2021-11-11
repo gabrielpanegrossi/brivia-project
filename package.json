@@ -9,7 +9,8 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"dev": "gulp devWatch",
-		"start": "gulp bundleSass && gulp minifyJs && node main"
+		"start": "gulp bundleSass && gulp minifyJs && node app",
+		"build": "gulp bundleSass && gulp minifyJs"
 	},
 	"author": "Gabriel P. Santos",
 	"license": "ISC",

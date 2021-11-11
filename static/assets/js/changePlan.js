@@ -1,24 +1,52 @@
-const arr = $('.plans-illustrator .nav-pills .nav-item');
-let x = arr.length - 1;
+const plansContainer = document.getElementById('pills-tab-plans');
+const htmlElementsObj = {};
 
 $(document).ready(function () {
-	changeOption(x);
+	hideItems();
 });
 
-$('.plans-illustrator .nav-pills span').click(() => {
-	changeOption(x);
+$( window ).resize(function() {
+	hideItems()
 });
 
-function changeOption(indexNumber) {
+$('.rightArrow-icon').click(() => {
+	changeOption(htmlElementsObj);
+});
+
+function hideItems(){
+	const renderedArr = $('.plans-illustrator .nav-pills .nav-item');
+
+	renderedArr.map((index, component) => {
+		index > ($('#pills-tab-plans').width() > 300 ? 1 : 0) ? component.style.display = "none" : component.style.display = "initial" 
+	});
+}
+
+function createHtmlArr(obj){
+	const htmlArr = Object.values(obj);
+
+	htmlArr.push(htmlArr[0]);
+	htmlArr.splice(0,1);
+
+	return htmlArr;
+}
+
+function changeOption(obj) {
+	const arr = $('.plans-illustrator .nav-pills .nav-item');
+	plansContainer.innerHTML = '';
+	let content = '';
+
+
 	arr.map((index, component) => {
-		index === indexNumber
-			? (component.style.display = 'none')
-			: (component.style.display = 'initial');
+		obj[index] = component.outerHTML;
 	});
 
-	if (x != arr.length - 1) {
-		x++;
-	} else {
-		x = 0;
-	}
+	const finalArr = createHtmlArr(obj);
+
+	finalArr.map((component, index ) => {
+		 content += component;
+	});
+
+	plansContainer.innerHTML = content;
+
+	hideItems();
 }
