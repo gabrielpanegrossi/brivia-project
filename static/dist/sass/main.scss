@@ -32,14 +32,14 @@ main {
 					height: 100%;
 					width: 80%;
 					margin: 0 auto;
-					padding: 0 0 60px;
+					padding: 0 0 $indent-xxxxm;
 
 					h2 {
-						margin-bottom: 20px;
+						margin-bottom: $indent-base;
 					}
 
 					p {
-						margin-bottom: 35px;
+						margin-bottom: $indent-xxm;
 					}
 
 					a {
@@ -48,7 +48,7 @@ main {
 						margin-left: auto;
 
 						span:first-child {
-							margin-right: 10px;
+							margin-right: $indent-xs;
 						}
 					}
 				}
@@ -68,7 +68,7 @@ main {
 
 			h2 {
 				max-width: 210px;
-				margin-bottom: 30px;
+				margin-bottom: $indent-xm;
 				color: $gray;
 				font-weight: bold;
 			}
@@ -76,26 +76,26 @@ main {
 			.row {
 				& > div {
 					padding-left: 0;
-					padding-right: 24px;
-					margin-bottom: 35px;
+					padding-right: $indent-m;
+					margin-bottom: $indent-xxm;
 				}
 
 				p {
-					font-size: 12px;
+					font-size: $font-xs;
 					margin: 0;
 					color: $subtext-gray;
 				}
 
 				p:first-child {
-					font-size: 16px;
-					margin-bottom: 5px;
+					font-size: $font-m;
+					margin-bottom: $indent-s;
 					color: $black;
 				}
 
 				span {
 					min-width: 40px;
 					min-height: 40px;
-					margin: 5px 10px 0 0;
+					margin: $indent-s $indent-xs 0 0;
 				}
 			}
 
@@ -103,7 +103,7 @@ main {
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				margin-top: 80px;
+				margin-top: $indent-l;
 				width: 50%;
 				min-width: fit-content;
 				color: $white;
@@ -111,7 +111,7 @@ main {
 				border: none;
 
 				span:first-child {
-					margin-right: 10px;
+					margin-right: $indent-xs;
 				}
 
 				&:focus,
@@ -127,7 +127,7 @@ main {
 			background: $strong-gray;
 
 			h2 {
-				margin-bottom: 40px;
+				margin-bottom: $indent-xs;
 				color: $white;
 				font-weight: bold;
 			}
@@ -203,7 +203,7 @@ main {
 			}
 		
 			.tab-content {
-				margin-top: 30px;
+				margin-top: $indent-xm;
 
 				.tab-pane.active {
 					display: flex;
@@ -264,7 +264,7 @@ main {
 @media (min-width: 768px) {
 	main {
 		.dream-about-it {
-			padding: 90px;
+			padding: $indent-xl;
 
 			.image-handler {
 				padding-right: 0;
@@ -273,13 +273,13 @@ main {
 			.content-nav {
 				display: flex;
 				justify-content: center;
-				padding: 60px 0 0;
-				margin-bottom: 30px;
+				padding: $indent-xxxxm 0 0;
+				margin-bottom: $indent-xm;
 
 				ul {
 					display: flex;
 					align-items: center;
-					gap: 15px;
+					gap: $indent-xxs;
 					width: 100%;
 					max-width: 80%;
 					margin: 0 auto;
@@ -293,10 +293,10 @@ main {
 						display: flex;
 						align-items: center;
 						justify-content: center;
-						gap: 5px;
+						gap: $indent-s;
 						font-weight: bold;
-						font-size: 12px;
-						padding: 10px;
+						font-size: $font-xs;
+						padding: $indent-xs;
 						width: 100%;
 					}
 				}
@@ -306,13 +306,13 @@ main {
 		.explaining-the-product {
 			.positive-points,
 			.plans-illustrator {
-				padding: 60px 90px;
+				padding: $indent-xxxxm $indent-xl;
 			}
 
 			.positive-points {
 				h2 {
 					max-width: 210px;
-					margin-bottom: 30px;
+					margin-bottom: $indent-xm;
 					color: $gray;
 					font-weight: bold;
 
@@ -324,22 +324,22 @@ main {
 				.row {
 					& > div {
 						padding-left: 0;
-						padding-right: 24px;
-						margin-bottom: 35px;
+						padding-right: $indent-m;
+						margin-bottom: $indent-xxm;
 					}
 				}
 			}
 		}
 
 		.schedule-visit .row{
-			padding:70px 90px;
+			padding:$indent-xxxxxxm $indent-xl;
 	
 			h2{
 				color:$orange;
 			}
 	
 			p{
-				font-size: 16px;
+				font-size: $font-m;
 				max-width: 790px;
 			}
 	
@@ -349,8 +349,8 @@ main {
 	
 				div:first-child{
 					span{
-						font-size: 24px;
-						margin-right:10px;
+						font-size: $font-xm;
+						margin-right:$indent-xs;
 					}
 				}
 			}
@@ -364,7 +364,7 @@ main {
 @media (max-width: 767px) {
 	main {
 		.dream-about-it {
-			padding: 90px 0 0;
+			padding: $indent-xl 0 0;
 
 			.image-handler {
 				padding: 0;
@@ -378,22 +378,22 @@ main {
 					justify-content: center;
 					width: 100%;
 					max-width: 90%;
-					gap: 10px;
+					gap: $indent-xs;
 					top: 25px;
 					left: 50%;
 					transform: translateX(-50%);
 
 					.nav-link {
-						gap: 5px;
-						padding: 10px;
+						gap: $indent-s;
+						padding: $indent-xs;
 						font-weight: normal;
-						font-size: 12px;
+						font-size: $font-xs;
 					}
 				}
 
 				.content-handler {
 					article {
-						padding: 60px 0 60px;
+						padding: $indent-xxxxm 0 $indent-xxxxm;
 					}
 
 					button {
@@ -411,12 +411,12 @@ main {
 			
 			.positive-points,
 			.plans-illustrator {
-				padding:0 60px;
-				padding-top: 35px;
+				padding:0 $indent-xxxxm;
+				padding-top: $indent-xxm;
 			}
 
 			.positive-points {
-				padding-bottom: 50px;
+				padding-bottom: $indent-xxxxm;
 
 				h2 {
 					&::after {
@@ -430,20 +430,20 @@ main {
 			}
 
 			.plans-illustrator {
-				padding-bottom: 100px;
+				padding-bottom: $indent-xxl;
 			}
 		}
 
 		.schedule-visit .row{
-			padding:50px 60px;
+			padding:$indent-xxxxm $indent-xxxxm;
 	
 			h2{
 				color:$orange;
-				font-size:30px;
+				font-size:$font-l;
 			}
 	
 			p{
-				font-size: 14px;
+				font-size: $font-xxs;
 			}
 	
 			.schedule-wrapper{
@@ -452,12 +452,12 @@ main {
 	
 				div:first-child{
 					span{
-						font-size: 24px;
+						font-size: $font-xm;
 					}
 				}
 	
 				.buttons-handler{
-					margin-top:30px;
+					margin-top:$indent-xm;
 				}
 			}
 		}
@@ -472,7 +472,7 @@ main {
 					top: 30px;
 
 					.nav-link {
-						font-size: 8px;
+						font-size: $font-s;
 
 						span:first-child {
 							min-height: 10px;

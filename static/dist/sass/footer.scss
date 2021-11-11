@@ -31,16 +31,16 @@ footer{
         .footer-content{
 
             .row{
-                padding: 40px 90px 90px;
+                padding: $indent-xxxm $indent-xl $indent-xl;
 
                 div:first-child{
-                    padding-bottom: 20px;
-                    margin-bottom:70px;
+                    padding-bottom: $indent-base;
+                    margin-bottom:$indent-xxxxxxm;
                 }
 
                 .copy-right{
                     display: flex;
-                    gap: 100px;
+                    gap: $indent-xxl;
                 }
             }
         }
@@ -55,17 +55,17 @@ footer{
         .footer-content{
 
             .row{
-                padding: 40px 60px 90px;
+                padding: $indent-xxxm $indent-xxxxxm $indent-xl;
 
                 div:first-child{
-                    padding-bottom: 90px;
-                    margin-bottom:80px;
+                    padding-bottom: $indent-xl;
+                    margin-bottom:$indent-l;
                 }
 
                 .copy-right{
                     display: flex;
                     flex-direction:column;
-                    gap: 5px;
+                    gap: $indent-s;
                 }
             }
         }

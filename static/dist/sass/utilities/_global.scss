@@ -1,6 +1,8 @@
 @import url(../../dist/css/bootstrap.min.css);
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,900&display=swap');
 
+//
+// Colors
 $white: #fff;
 $lighter-gray: #ecf2f2;
 $light-gray: #efebe5;
@@ -18,6 +20,33 @@ $strong-brown: #393937;
 $blue: #9abdc3;
 $orange: #ed6f2e;
 $strong-orange: #eb4826;
+
+//
+//Font-size
+$font-s:8px;
+$font-xs:12px;
+$font-xxs:14px;
+$font-m:16px;
+$font-xm:24px;
+$font-l:30px;
+
+//
+//Indent
+$indent-base:20px;
+$indent-s: calc(#{$indent-base} / 4); //5px
+$indent-xs: calc(#{$indent-base} / 2); //10px
+$indent-xxs: calc(#{$indent-base} * 0.75); //15px
+$indent-m: calc(#{$indent-base} * 1.25); //25px
+$indent-xm: calc(#{$indent-base} * 1.5); //30px
+$indent-xxm: calc(#{$indent-base} * 1.75); //35px
+$indent-xxxm: calc(#{$indent-base} * 2); //40px
+$indent-xxxxm: calc(#{$indent-base} * 2.75); //50px
+$indent-xxxxxm: calc(#{$indent-base} * 3); //60px
+$indent-xxxxxxm: calc(#{$indent-base} * 3.5); //70px
+$indent-l: calc(#{$indent-base} * 4); //80px
+$indent-xl: calc(#{$indent-base} * 4.5); //90px
+$indent-xxl: calc(#{$indent-base} * 5); //100px
+
 
 * {
 	font-family: 'Lato', sans-serif;

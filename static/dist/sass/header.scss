@@ -23,7 +23,7 @@ header {
 				width:100%;
 				height:25px;
 				position:relative;
-				padding: 10px;
+				padding: $indent-xs;
 			}
 		}
 	}
@@ -121,8 +121,8 @@ header {
 
 	#navbarSupportedContent {
 		width: 100%;
-		padding: 20px;
-		margin-bottom: 20px;
+		padding: $indent-base;
+		margin-bottom: $indent-base;
 		background: $black;
 
 		.nav-item > a {
@@ -154,7 +154,7 @@ header {
 			.desktop-menu {
 				display: flex;
 				align-items: center;
-				gap: 5px;
+				gap: $indent-s;
 			}
 
 			.search-bar-handler form {
@@ -213,13 +213,13 @@ header {
 						}
 
 						.modal-body {
-							padding: 0 16px 16px;
+							padding: 0 $indent-xxs $indent-xxs;
 
 							form {
-								gap: 20px;
+								gap: $indent-base;
 
 								input {
-									padding: 5px;
+									padding: $indent-s;
 
 									&::placeholder {
 										color: $light-brown;
@@ -238,6 +238,8 @@ header {
 						}
 
 						.modal-footer {
+							padding: 0 $indent-xxs $indent-xxs;
+							flex-wrap:unset;
 							.btn-primary {
 								color: $strong-gray;
 								background: $light-gray;
@@ -285,7 +287,7 @@ header {
 		}
 
 		.home-banner {
-			padding: 60px 0;
+			padding: $indent-xxxxxm 0;
 			align-items: center;
 
 			.text-handler,
@@ -294,7 +296,7 @@ header {
 			}
 
 			.text-handler {
-				margin-bottom: 30px;
+				margin-bottom: $indent-xm;
 				text-align: center;
 
 				h1 {
