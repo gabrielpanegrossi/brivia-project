@@ -249,6 +249,18 @@ main {
 //
 // Desktop
 //
+
+@media(max-width:1023px){
+	.explaining-the-product > .row{
+		flex-direction:column-reverse;
+
+		.positive-points,
+		.plans-illustrator{
+			width:100%;
+		}
+	}
+}
+
 @media (min-width: 768px) {
 	main {
 		.dream-about-it {

@@ -1,0 +1,1 @@
+document.addEventListener("touchstart",onTouchStart,{passive:!0}),document.addEventListener("touchmove",onTouchStart,{passive:!0}),document.addEventListener("touchend",onTouchStart,{passive:!0});

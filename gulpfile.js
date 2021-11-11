@@ -16,7 +16,7 @@ const bundleSass = () => {
 };
 
 function minifyJs() {
-	return src('./static/assets/js/changePlan.js', { allowEmpty: true })
+	return src('./static/assets/js/**/*.js', { allowEmpty: true })
 		.pipe(minify({ noSource: true }))
 		.pipe(dest('./static/dist/js'));
 }
