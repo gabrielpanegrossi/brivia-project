@@ -1,1 +1,0 @@
-document.addEventListener("mousewheel",this.mousewheel.bind(this),{passive:!0});
